@@ -23,5 +23,5 @@ func CalculateTowers(barLengths []int) (int, int) {
 				maxaltura = contar
 			}
 		}
-	return maxaltura, numerotorre
+	return maxaltura, numerotorr
 }
