@@ -19,7 +19,7 @@ func DivideWatermelon(weight int) (bool, error) {
 		return false, fmt.Errorf("Peso inválido")
 	}
 	if weight >= 4 && weight%2 == 0 {
-		return false, nil
+		return true, nil
 	} else {
 		return false, nil
 	}
