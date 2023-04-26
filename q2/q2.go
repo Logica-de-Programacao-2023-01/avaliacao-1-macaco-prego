@@ -1,5 +1,4 @@
 package q2
-
 //Um dia, três melhores amigos - Pedro, Vanessa e Tônia - decidiram formar uma equipe e participar de concursos de
 //programação. Os participantes geralmente recebem vários problemas durante esses concursos. Muito antes do início, os
 //amigos decidiram que implementariam um problema somente se pelo menos dois deles tivessem certeza da solução. Caso
@@ -11,8 +10,19 @@ package q2
 //indica o contrário.
 //
 //Ajude os amigos a encontrar o número de problemas para os quais eles escreverão uma solução.
-
 func ProblemsSolved(answers [][3]bool) int {
-	// Seu código aqui
-	return 0
+	conta := 0
+	for i := 0; i < len(answers); i++ {
+		soma := 0
+		for j := 0; j < 3; j++ {
+			if answers[i][j] {
+				soma++
+			}
+		}
+
+		if soma >= 2 {
+			conta++
+		}
+	}
+	return conta
 }
